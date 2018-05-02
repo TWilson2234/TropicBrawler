@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class characterMovement : MonoBehaviour {
+public class CharacterMovement : MonoBehaviour {
 
 	private Rigidbody rb;
 	float plrMoveSpd;

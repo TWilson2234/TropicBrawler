@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterHealth : MonoBehaviour {
+public class CharacterHealth : MonoBehaviour {
 
 	public float healthPoints = 100f;
-	public cameraController camCon;
-	public characterMovement charMove;
+	public CameraController camCon;
+	public CharacterMovement charMove;
 
 	private Animator charAnim;
 
@@ -15,8 +15,8 @@ public class characterHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		charMove = GetComponent<characterMovement> ();
-		camCon = this.GetComponentInChildren<cameraController>();
+		charMove = GetComponent<CharacterMovement> ();
+		camCon = this.GetComponentInChildren<CameraController>();
 		charAnim = GetComponent<Animator>();
 
 		

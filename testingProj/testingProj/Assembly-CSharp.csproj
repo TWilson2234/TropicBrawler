@@ -51,9 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharacterScripts\cameraController.cs" />
-     <Compile Include="Assets\Scripts\CharacterScripts\characterHealth.cs" />
-     <Compile Include="Assets\Scripts\CharacterScripts\characterMovement.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\CharacterHealth.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\testingScript.cs" />
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />

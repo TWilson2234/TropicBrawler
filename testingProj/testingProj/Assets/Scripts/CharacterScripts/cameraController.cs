@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class cameraController : MonoBehaviour {
+public class CameraController : MonoBehaviour {
 	Vector2 mouseLook;
 	Vector2 smoothV;
 	public float sensitivity = 5f;
@@ -10,7 +10,7 @@ public class cameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		charRig = this.transform.parent.gameObject;
+		charRig = this.transform.parent.parent.gameObject; //This which is the child of headController, which si a child of player. Get player rigidbody
 
 	}
 
