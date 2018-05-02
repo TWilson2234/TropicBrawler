@@ -7,13 +7,9 @@ public class cameraController : MonoBehaviour {
 	public float sensitivity = 5f;
 	public float smoothing = 2f;
 	GameObject charRig;
-	public Animator camAnim;
-
-	public bool isDeath = false;
 
 	// Use this for initialization
 	void Awake () {
-		camAnim = GetComponent<Animator> ();
 		charRig = this.transform.parent.gameObject;
 
 	}
@@ -22,7 +18,6 @@ public class cameraController : MonoBehaviour {
 	void Update () {
 
 		CameraMove ();
-		CheckPlayerDeath ();
 
 	}
 
@@ -40,13 +35,5 @@ public class cameraController : MonoBehaviour {
 
 		Cursor.lockState = CursorLockMode.Locked; //Locks the cursor in the middle of screen.
 
-	}
-
-	void CheckPlayerDeath() {
-		if (isDeath == true) {
-			camAnim.SetTrigger ("IsDeath");
-
-			
-		}
 	}
 }

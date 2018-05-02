@@ -18,8 +18,6 @@ public class characterMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		Movement ();
-		//CheckHealth ();
-
 	}
 
 	void Movement() {

@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour {
+public class characterHealth : MonoBehaviour {
 
 	public float healthPoints = 100f;
 	public cameraController camCon;
 	public characterMovement charMove;
+
+	private Animator charAnim;
+
+
 	
 
 	// Use this for initialization
 	void Start () {
 		charMove = GetComponent<characterMovement> ();
 		camCon = this.GetComponentInChildren<cameraController>();
+		charAnim = GetComponent<Animator>();
 
 		
 	}
@@ -28,8 +33,9 @@ public class PlayerHealth : MonoBehaviour {
 		if(healthPoints > 0) {
 			healthPoints -= 1f;
 			if (healthPoints <= 0) {
-				camCon.isDeath = true;
-				//charMove.enabled = false;
+				//camCon.enabled = false; //Comment out to test
+				//charMove.enabled = false; //
+				//charAnim.SetBool("isDead", true); //
 			}
 		}
 	}

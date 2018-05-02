@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
     Transform player;
-    PlayerHealth playerHealth;
+    characterHealth playerHealth;
     EnemyHealth enemyHealth;
     UnityEngine.AI.NavMeshAgent nav;
 
@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerHealth = player.GetComponent<PlayerHealth>();
+        playerHealth = player.GetComponent<characterHealth>();
         enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
