@@ -31,7 +31,7 @@ public class CharacterHealth : MonoBehaviour {
 
 	void CheckHealth() {
 		if(healthPoints > 0) {
-			healthPoints -= 1f;
+			//healthPoints -= 1f;
 			if (healthPoints <= 0) {
 				//camCon.enabled = false; //Comment out to test
 				//charMove.enabled = false; //
