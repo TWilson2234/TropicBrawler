@@ -155,6 +155,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b07b2d640441d9a489b06877f0130c5e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &669448795 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1576363399674794, guid: dd386a280efc63841ad7f4df766c69dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1321838298}
+--- !u!135 &669448796
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 669448795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5.56
+  m_Center: {x: 0, y: 2.59, z: 2.02}
 --- !u!1 &841304894
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,27 +306,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114463244512673904, guid: 82961405dc5937e4eae3c2b23cd5cd0b,
-        type: 2}
-      propertyPath: charCam
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 54745494087652756, guid: 82961405dc5937e4eae3c2b23cd5cd0b,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 95674043365611526, guid: 82961405dc5937e4eae3c2b23cd5cd0b,
-        type: 2}
-      propertyPath: m_CullingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1039032102783150, guid: 82961405dc5937e4eae3c2b23cd5cd0b, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 95674043365611526, guid: 82961405dc5937e4eae3c2b23cd5cd0b, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82961405dc5937e4eae3c2b23cd5cd0b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1271050532
@@ -398,6 +395,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1271050532}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1321838298
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.07311e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236446281206954, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dd386a280efc63841ad7f4df766c69dc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1465420749
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +471,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: acf90017fdb90394cb897fff88ac0011, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
