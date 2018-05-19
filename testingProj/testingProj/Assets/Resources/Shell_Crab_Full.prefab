@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 114228399744446010}
   - component: {fileID: 195676024921777478}
   - component: {fileID: 65428368172928278}
+  - component: {fileID: 135317688191260234}
   m_Layer: 0
   m_Name: Shell_Crab_Full
   m_TagString: Enemy
@@ -598,7 +599,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576363399674794}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.28, y: 16.04, z: -1.65}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4066885626872320}
@@ -969,7 +970,7 @@ BoxCollider:
   m_GameObject: {fileID: 1576363399674794}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4.5, y: 6, z: 8.5}
   m_Center: {x: 0, y: 3, z: 1}
@@ -1030,6 +1031,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3663d78815512244885a204dc64f481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135317688191260234
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576363399674794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5.56
+  m_Center: {x: 0, y: 2.59, z: 2.02}
 --- !u!137 &137406605464147420
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1114,8 +1127,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 1576363399674794}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
-  m_Speed: 3.5
+  m_Radius: 3.64
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1123,7 +1136,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1
+  m_Height: 8.35
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
